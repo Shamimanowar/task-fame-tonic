@@ -7,36 +7,27 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        "fame-pink": "#FC004E",
+        "fame-cyan": "#00E7F9",
+        secondary: {
+          100: "#A9A9A9",
+        },
+      },
       backgroundImage: {
         "fame-gradient": "linear-gradient(90deg, #FC004E 0%, #10CBE0 100%)",
       },
       fontFamily: {
-        urbanist: ["Urbanist", "sans-serif"],
-        figtree: ["Figtree", "sans-serif"],
+        urbanist: ["var(--font-urbanist)", "Urbanist", "sans-serif"],
+        figtree: ["var(--font-figtree)", "Figtree", "sans-serif"],
       },
       fontWeight: {
         500: "500",
         600: "600",
         700: "700",
         800: "800",
-        medium: "500",
-        semibold: "600",
-        bold: "700",
-        extrabold: "800",
-      },
-      colors: {
-        "fame-pink": "#FC004E",
-        "fame-cyan": "#00E7F9",
       },
     },
   },
   plugins: [],
-  safelist: [
-    "text-fame-cyan",
-    "text-fame-pink",
-    "bg-fame-gradient",
-    "font-figtree",
-    "font-urbanist",
-    "font-extrabold",
-  ],
 };

@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Reset body styles and ensure proper background */
 html, body {
@@ -10,28 +12,24 @@ html, body {
 
 /* Override for black sections */
 .bg-white {
-  background-color: ffffff !important;
+  background-color: #ffffff !important;
 }
 
-/* Ensure gradient works properly */
-.bg-fame-gradient {
-  background: linear-gradient(90deg, #FC004E 0%, #10CBE0 100%) !important;
-}
-
-/* Custom color utilities */
-.text-fame-cyan {
-  color: #00E7F9 !important;
-}
-
-.text-fame-pink {
-  color: #FC004E !important;
-}
-
-/* Font family utilities */
-.font-figtree {
-  font-family: var(--font-figtree), Figtree, sans-serif !important;
-}
-
-.font-urbanist {
-  font-family: var(--font-urbanist), Urbanist, sans-serif !important;
+/* Custom utilities - These are now backups since Tailwind v3 should handle them */
+@layer utilities {
+  .text-secondary-100 {
+    color: #A9A9A9;
+  }
+  
+  .text-fame-cyan {
+    color: #00E7F9;
+  }
+  
+  .text-fame-pink {
+    color: #FC004E;
+  }
+  
+  .bg-fame-gradient {
+    background: linear-gradient(90deg, #FC004E 0%, #10CBE0 100%);
+  }
 }
