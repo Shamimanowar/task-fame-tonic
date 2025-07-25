@@ -12,6 +12,7 @@ module.exports = {
         "fame-cyan": "#00E7F9",
         secondary: {
           100: "#A9A9A9",
+          200: "#ABABAB",
         },
       },
       backgroundImage: {

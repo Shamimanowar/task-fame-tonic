@@ -14,12 +14,18 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="max-w-7xl mx-auto font-semibold font-figtree px-5 sm:px-8 py-4 sm:py-8 text-lg">
+    <nav className="max-w-7xl mx-auto font-semibold font-figtree px-5 md:px-8 py-3 md:py-8 text-lg">
       {/* Mobile Navigation */}
 
       <div className="sm:hidden">
         <div className="flex justify-between items-center">
-          <Image src="/logo.png" alt="Logo" width={107} height={46} />
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={107}
+            height={46}
+            className="max-sm:m-auto"
+          />
 
           {/* Menu Opening/Closing Button */}
           <button
@@ -70,7 +76,7 @@ const NavBar = () => {
 
       <div className="hidden sm:flex flex-row justify-between items-center">
         <Image src="/logo.png" alt="Logo" width={173} height={174} />
-        <div className="flex items-center space-x-8">
+        <div className="flex items-center space-x-8 mr-24">
           <ul className="flex gap-10">
             <li>
               <Link href="#" className="hover:text-blue-600 text-secondary-100">
