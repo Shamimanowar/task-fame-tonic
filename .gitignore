@@ -42,3 +42,4 @@ next-env.d.ts
 
 # ignore yarn lock file if using npm
 yarn.lock
+.vscode/
