@@ -8,7 +8,7 @@ import Button from "@/components/Button";
 export default function Home() {
   return (
     <div className="">
-      <section>
+      <section className="sticky top-0 z-50">
         <Banner />
       </section>
       <section className="bg-black m-auto">
@@ -17,7 +17,7 @@ export default function Home() {
 
       <main className="w-full flex flex-col-reverse max-w-7xl m-auto py-0 px-5 font-urbanist relative md:p-8 md:flex-row md:items-start mb-5">
         <div className="flex-1 z-20 bg-transparent relative md:w-[60%] md:pr-0">
-          <div className="md:max-w-[70%]">
+          <div className="md:max-w-[65%]">
             <h1 className="font-extrabold text-[25px] leading-[115%] mb-1 text-center md:font-bold md:text-[35px] md:text-left">
               Want to Turn Social Media Into a Profitable Career?{" "}
             </h1>
