@@ -14,7 +14,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="max-w-7xl mx-auto font-semibold font-figtree px-5 md:px-8 py-3 md:py-8 text-lg">
+    <nav className="max-w-7xl mx-auto font-semibold font-figtree px-5 md:px-8 pt-4 md:py-8 text-lg">
       {/* Mobile Navigation */}
 
       <div className="sm:hidden">
