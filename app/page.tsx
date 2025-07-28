@@ -22,7 +22,7 @@ export default function Home() {
               Want to Turn Social Media Into a Profitable Career?{" "}
             </h1>
 
-            <h1 className="font-extrabold text-[25px] leading-[115%] text-fame-cyan drop-shadow-[0_5px_5px_rgba(252,0,78,1)] text-center md:font-bold md:text-[35px] md:text-left">
+            <h1 className="font-extrabold text-[25px] leading-[115%] text-fame-cyan drop-shadow-fame-cyan text-center md:font-bold md:text-[35px] md:text-left">
               Discover your way to success with Fametonic:
             </h1>
             {/* Influence boost cards */}
