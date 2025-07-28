@@ -7,53 +7,57 @@ import Button from "@/components/Button";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <Banner />
+    <div className="">
+      <section>
+        <Banner />
+      </section>
       <section className="bg-black m-auto">
         <NavBar />
       </section>
 
-      <main className="w-full max-w-7xl flex flex-col-reverse md:flex-row justify-center m-auto items-center py-0 px-5 md:p-8 font-urbanist">
-        <div className="flex-1 z-20 bg-transparent">
-          <h1 className="font-extrabold md:font-bold text-[25px] md:text-[35px] space-y-5 max-md:text-center leading-[115%] mb-1">
-            Want to Turn Social Media Into a Profitable Career?{" "}
-          </h1>
+      <main className="w-full flex flex-col-reverse max-w-7xl m-auto py-0 px-5 font-urbanist relative md:p-8 md:flex-row md:items-start mb-5">
+        <div className="flex-1 z-20 bg-transparent relative md:w-[60%] md:pr-0">
+          <div className="md:max-w-[70%]">
+            <h1 className="font-extrabold text-[25px] leading-[115%] mb-1 text-center md:font-bold md:text-[35px] md:text-left">
+              Want to Turn Social Media Into a Profitable Career?{" "}
+            </h1>
 
-          <h1 className="font-extrabold md:font-bold text-[25px] md:text-[35px] space-y-5 max-md:text-center leading-[115%] text-fame-cyan drop-shadow-[0_5px_5px_rgba(252,0,78,1)]">
-            Discover your way to success with Fametonic:
-          </h1>
-          {/* Influence boost cards */}
-          <div className="my-4 max-w-[90%]">
-            {heroSectionTexts.map((text) => (
-              <InfluenceBoostCard key={text} text={text} />
-            ))}
-          </div>
+            <h1 className="font-extrabold text-[25px] leading-[115%] text-fame-cyan drop-shadow-[0_5px_5px_rgba(252,0,78,1)] text-center md:font-bold md:text-[35px] md:text-left">
+              Discover your way to success with Fametonic:
+            </h1>
+            {/* Influence boost cards */}
+            <div className="my-5 md:max-w-[90%]">
+              {heroSectionTexts.map((text) => (
+                <InfluenceBoostCard key={text} text={text} />
+              ))}
+            </div>
 
-          {/* Bottom section */}
-          <div className="py-3 flex flex-col-reverse md:flex-col gap-8">
-            {/* First part */}
-            <div className="flex flex-col w-full sm:max-w-80  gap-3">
-              <Button text="GET STARTED" />
-              <p className="font-figtree font-normal text-xs text-center text-secondary-200">
-                1-minute quiz for personalized Insights
-              </p>
+            {/* Bottom section */}
+            <div className="py-3 flex flex-col-reverse gap-8 md:flex-col">
+              {/* First part */}
+              <div className="flex flex-col w-full gap-3 sm:max-w-80">
+                <Button text="GET STARTED" />
+                <p className="font-figtree font-normal text-xs text-center text-secondary-200">
+                  1-minute quiz for personalized Insights
+                </p>
+              </div>
+              {/* Second part */}
+              <div className="flex flex-col gap-5">
+                <p className="font-figtree font-medium text-xs leading-[100%] text-secondary-200 text-center md:text-left">
+                  By clicking "Get Started", you agree with Terms and
+                  Conditions, Privacy Policy, Subscription Terms
+                </p>
+                <p className="font-figtree font-medium text-xs leading-[100%] text-secondary-200 text-center md:text-left">
+                  Fametonic 2025 ©All Rights Reserved.
+                </p>
+              </div>
+              {/* Bottom section ends */}
             </div>
-            {/* Second part */}
-            <div className="flex flex-col gap-5">
-              <p className="font-figtree font-medium text-xs leading-[100%] text-secondary-200 max-md:text-center">
-                By clicking "Get Started", you agree with Terms and Conditions,
-                Privacy Policy, Subscription Terms
-              </p>
-              <p className="font-figtree font-medium text-xs leading-[100%] text-secondary-200 max-md:text-center">
-                Fametonic 2025 ©All Rights Reserved.
-              </p>
-            </div>
-            {/* Bottom section ends */}
           </div>
         </div>
 
         {/* Hero image */}
-        <div className="flex-1 relative z-10 md:right-28">
+        <div className="flex-1 relative z-10 md:absolute md:right-0 md:top-0 md:w-[50%] md:h-full">
           <Image
             src="/hero-image.png"
             alt="Hero Image"
