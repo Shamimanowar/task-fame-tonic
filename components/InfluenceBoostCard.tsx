@@ -8,7 +8,7 @@ const InfluenceBoostCard = ({ text }: InfluenceBoostCardProps) => {
   return (
     <p
       key={text}
-      className="leading-7 flex flex-row justify-start items-center gap-2 my-1"
+      className="leading-5 flex flex-row justify-start items-center gap-2 my-2"
     >
       <Image
         src="/star-mark.png"

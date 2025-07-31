@@ -37,7 +37,7 @@ export default function Home() {
               {/* First part */}
               <div className="flex flex-col w-full gap-3 sm:max-w-80">
                 <Button text="GET STARTED" />
-                <p className="font-figtree font-normal text-xs text-center text-secondary-200">
+                <p className="font-figtree font-normal text-xs text-center">
                   1-minute quiz for personalized Insights
                 </p>
               </div>
@@ -47,7 +47,7 @@ export default function Home() {
                   By clicking "Get Started", you agree with Terms and
                   Conditions, Privacy Policy, Subscription Terms
                 </p>
-                <p className="font-figtree font-medium text-xs leading-[100%] text-secondary-200 text-center md:text-left">
+                <p className="font-figtree font-medium text-10 leading-[100%] text-secondary-200 text-center md:text-left">
                   Fametonic 2025 ©All Rights Reserved.
                 </p>
               </div>
